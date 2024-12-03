@@ -2,6 +2,7 @@
 #define PARKING_LOT_H
 #include <iostream> 
 #include <vehicle.h>
+#include <random>
 
 class parking_slot {
     public:
@@ -16,6 +17,7 @@ class parking_slot {
         int get_size_type();
         int get_floor_number();
         int get_slot_number();
+        void print_parking_slot();
     private:
         int size_type; // 1 for van and car, 2 for motorcycle and bicycle
         vehicle* parked_vehicle;
@@ -31,8 +33,8 @@ class parking_lot {
         // each floor's slot will be decided when generating the slot
         ~parking_lot();
         void print_parking_lot();
+        parking_lot* generate_slots(int number_of_floors, int number_of_slots);
     private:
-        parking_slot* generate_slots(int number_of_floors, int number_of_slots);
         int number_of_floors;
         int number_of_slots;
         parking_slot* slots;
