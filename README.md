@@ -3,11 +3,13 @@
 ```mermaid
 graph TB
 
-ENGR151-->TAs
-ENGR151-->Manuel
-ENGR151-->Students
-TAs-->Jane
+vehicle --> van
+vehicle --> car
+vehicle --> motorcycle
+vehicle --> bicycle
 
-A[Horse and Cow]
-Manuel-.->A
+ParkingLot 
+
+ParkingSlot
+
 ```
