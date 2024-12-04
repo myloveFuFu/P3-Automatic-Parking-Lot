@@ -23,7 +23,6 @@ int main(){
     }
     parklot.park_vehicle(&in, floor, slot);
     parklot.print_parking_lot();
-        
-        
+
         
 }
