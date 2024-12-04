@@ -47,7 +47,7 @@ class parking_lot {
 
         void print_parking_lot();
         parking_slot* find_empty_slot(); // always find the cloest empty slot , if no empty slot, return nullptr
-        void hint(); // print the hint of the parking lot
+        void hint(vehicle in , float arrival_time = 0.0 ); // give a hint to the driver where to park 
         void ticket(); // print the ticket of the parking lot
        
     private:

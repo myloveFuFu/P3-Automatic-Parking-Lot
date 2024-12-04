@@ -113,7 +113,7 @@ parking_slot* parking_lot::find_empty_slot(){
     return nullptr;
 }
 
-void parking_lot::hint(vehicle in){
+void parking_lot::hint(vehicle in , float arrival_time) {
     this->print_parking_lot();
     std::cout << '\n';
 
@@ -122,7 +122,7 @@ void parking_lot::hint(vehicle in){
         std::cerr << "No empty slot.\n";
         exit(1);
     } else {
-        std::cout << "Your arrival time is 0.00\n"; // change latter
+        std::cout << "Your arrival time is " << arrival_time << '\n';
         std::cout << "Your vehicle type is "; 
         in.print_vehicle();
         std::cout << '\n';
